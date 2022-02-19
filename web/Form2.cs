@@ -40,6 +40,8 @@ namespace web
         }
 
 
+        
+
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (e.Node.Text == "09-121")
@@ -67,5 +69,13 @@ namespace web
 
         }
 
+        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.textBox1.Text = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            f3.textBox2.Text = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            f3.textBox3.Text = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            f3.ShowDialog();
+        }
     }
 }

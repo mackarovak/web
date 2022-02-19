@@ -29,22 +29,22 @@ namespace web
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("09-121");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("09-122");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Группы", new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("09-121");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("09-122");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Группы", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.webBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.SuspendLayout();
@@ -56,8 +56,8 @@ namespace web
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -75,7 +75,7 @@ namespace web
             // webBrowserToolStripMenuItem
             // 
             this.webBrowserToolStripMenuItem.Name = "webBrowserToolStripMenuItem";
-            this.webBrowserToolStripMenuItem.Size = new System.Drawing.Size(133, 29);
+            this.webBrowserToolStripMenuItem.Size = new System.Drawing.Size(133, 30);
             this.webBrowserToolStripMenuItem.Text = "Web browser";
             // 
             // splitContainer1
@@ -127,27 +127,17 @@ namespace web
             // 
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode4.Name = "Узел1";
-            treeNode4.Text = "09-121";
-            treeNode5.Name = "Узел3";
-            treeNode5.Text = "09-122";
-            treeNode6.Name = "Узел0";
-            treeNode6.Text = "Группы";
+            treeNode1.Name = "Узел1";
+            treeNode1.Text = "09-121";
+            treeNode2.Name = "Узел3";
+            treeNode2.Text = "09-122";
+            treeNode3.Name = "Узел0";
+            treeNode3.Text = "Группы";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode6});
+            treeNode3});
             this.treeView1.Size = new System.Drawing.Size(121, 97);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::web.Properties.Resources.photo_2021_09_13_00_14_14;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(530, 197);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.SizeModeChanged += new System.EventHandler(this.pictureBox1_SizeModeChanged);
             // 
             // dataGridView1
             // 
@@ -164,6 +154,7 @@ namespace web
             this.dataGridView1.Size = new System.Drawing.Size(797, 168);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
             // 
             // Column1
             // 
@@ -182,6 +173,16 @@ namespace web
             this.Column3.HeaderText = "Описание";
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::web.Properties.Resources.photo_2021_09_13_00_14_14;
+            this.pictureBox1.Location = new System.Drawing.Point(0, -24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(530, 197);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.SizeModeChanged += new System.EventHandler(this.pictureBox1_SizeModeChanged);
             // 
             // Form2
             // 
@@ -207,8 +208,8 @@ namespace web
             this.splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
